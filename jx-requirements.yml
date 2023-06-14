@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "41028y55e1.wicp.vip"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
