@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx_projec_demo_0614
+    - name: test-toBeDelete
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
