@@ -27,7 +27,7 @@ spec:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
         prometheus.io/port: "9090"
         prometheus.io/scrape: "true"
-        jenkins-x.io/hash: '23980e87bdb248b13502e22d2735f72cededd9c4a1612c713284d78007c62c71'
+        jenkins-x.io/hash: '3c19b37cdfbbf9f5de1444398cd8e70503c435202e9e10e543973bc257561200'
       labels:
         app: lighthouse-keeper
     spec:
