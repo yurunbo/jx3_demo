@@ -4,5 +4,6 @@ helmfiles:
 - path: helmfiles/kuberhealthy/helmfile.yaml
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
+- path: helmfiles/jx-production/helmfile.yaml
 templates: {}
 renderedvalues: {}
