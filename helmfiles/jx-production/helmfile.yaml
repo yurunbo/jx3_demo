@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.41028y55e1.wicp.vip
+releases:
+- chart: dev/jx-demo-0615-3
+  version: 0.0.2
+  name: jx-demo-0615-3
+templates: {}
+renderedvalues: {}
