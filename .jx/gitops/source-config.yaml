@@ -13,6 +13,7 @@ spec:
     - name: test-toBeDelete
     - name: test-webhook
     - name: webhook-demo-06015-1
+    - name: webhook-demo-2
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
