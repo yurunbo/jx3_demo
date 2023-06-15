@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx-demo-0615-3
     - name: jx_0615
     - name: jx_projec_demo_0614
     - name: test-toBeDelete
