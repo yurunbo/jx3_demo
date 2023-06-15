@@ -7,7 +7,12 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        yurunbo/jx_0615: true
+        yurunbo/jx_projec_demo_0614: true
         yurunbo/jx3_demo: true
+        yurunbo/test-toBeDelete: true
+        yurunbo/test-webhook: true
+        yurunbo/webhook-demo-06015-1: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -19,7 +24,12 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        yurunbo/jx_0615: merge
+        yurunbo/jx_projec_demo_0614: merge
         yurunbo/jx3_demo: merge
+        yurunbo/test-toBeDelete: merge
+        yurunbo/test-webhook: merge
+        yurunbo/webhook-demo-06015-1: merge
       queries:
       - labels:
         - approved
@@ -31,6 +41,11 @@ data:
         - needs-rebase
         repos:
         - yurunbo/jx3_demo
+        - yurunbo/jx_0615
+        - yurunbo/jx_projec_demo_0614
+        - yurunbo/test-toBeDelete
+        - yurunbo/test-webhook
+        - yurunbo/webhook-demo-06015-1
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +56,11 @@ data:
         - needs-rebase
         repos:
         - yurunbo/jx3_demo
+        - yurunbo/jx_0615
+        - yurunbo/jx_projec_demo_0614
+        - yurunbo/test-toBeDelete
+        - yurunbo/test-webhook
+        - yurunbo/webhook-demo-06015-1
       target_url: http://lighthouse-jx.41028y55e1.wicp.vip/merge/status
 kind: ConfigMap
 metadata:

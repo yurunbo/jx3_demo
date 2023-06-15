@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: yurunbo
+    provider: github
+    repository: jx-0615
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: yurunbo-jx-0615
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/yurunbo/jx_0615.git
+  org: yurunbo
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx_0615
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/yurunbo/jx_0615

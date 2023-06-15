@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: yurunbo
+    provider: github
+    repository: jx-projec-demo-0614
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: yurunbo-jx-projec-demo-0614
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/yurunbo/jx_projec_demo_0614.git
+  org: yurunbo
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx_projec_demo_0614
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/yurunbo/jx_projec_demo_0614

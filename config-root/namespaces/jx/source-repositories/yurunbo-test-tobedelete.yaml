@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: yurunbo
+    provider: github
+    repository: test-tobedelete
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: yurunbo-test-tobedelete
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/yurunbo/test-toBeDelete.git
+  org: yurunbo
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test-toBeDelete
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/yurunbo/test-toBeDelete
