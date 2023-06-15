@@ -26,6 +26,10 @@ data:
       repos:
       - yurunbo/webhook-demo-06015-1
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - yurunbo/webhook-demo-2
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -57,6 +61,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       yurunbo/test-webhook:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      yurunbo/webhook-demo-2:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -142,6 +151,20 @@ data:
       - cat
       - dog
       - pony
+      yurunbo/webhook-demo-2:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       yurunbo/webhook-demo-06015-1:
       - approve
       - assign
@@ -182,6 +205,9 @@ data:
       trusted_org: yurunbo
     - repos:
       - yurunbo/webhook-demo-06015-1
+      trusted_org: yurunbo
+    - repos:
+      - yurunbo/webhook-demo-2
       trusted_org: yurunbo
     welcome:
     - message_template: Welcome
